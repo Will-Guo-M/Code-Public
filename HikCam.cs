@@ -19,6 +19,8 @@ namespace HikCam
         MyCamera.MV_CC_DEVICE_INFO_LIST m_pDeviceList = new MyCamera.MV_CC_DEVICE_INFO_LIST();
         public bool m_bGrabbing { get; set; } = false;          //相机是否开始采集
         public bool ifccdConnected = false;          //相机是否初始化成功
+        //public bool ifccdConnected = false;          //相机是否初始化成功
+
         public string strUserID { get; set; } = string.Empty;       //自定义相机名称
         private MyCamera Camera { get; set; } = new MyCamera();
         private Bitmap image = null;
